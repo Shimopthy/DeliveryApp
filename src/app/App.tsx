@@ -128,7 +128,7 @@ const carouselSlides = [
     img: "https://images.unsplash.com/photo-1589010588553-46e8e7c21788?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     badge: "20% DESCUENTO",
     title: "¡Pizza para todos!",
-    sub: "Solo hoy en Restaurante B. Usa el código PIZZA20",
+    sub: "Solo hoy en Valucho. Usa el código PIZZA20",
     accent: "from-orange-500/80 to-red-600/80",
   },
   {
@@ -142,7 +142,7 @@ const carouselSlides = [
     img: "https://images.unsplash.com/photo-1672067993158-e144b3a9143f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
     badge: "NUEVO",
     title: "Sushi & Ramen",
-    sub: "Restaurante C ahora disponible en tu zona.",
+    sub: "Shimaya ahora disponible en tu zona.",
     accent: "from-indigo-600/80 to-blue-500/80",
   },
   {
@@ -1452,7 +1452,7 @@ function AdminForm({ action, type, restaurant, dish, delivery, onSubmit, onClose
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <label className="block text-xs font-medium mb-1.5 text-muted-foreground uppercase tracking-wide">Nombre</label>
-        <input type="text" value={name} onChange={e => setName(e.target.value)} placeholder={type === "restaurant" ? "Restaurante A" : type === "dish" ? "Lomo Saltado" : "Carlos Quispe"} required className={inputCls} />
+        <input type="text" value={name} onChange={e => setName(e.target.value)} placeholder={type === "restaurant" ? "El Tablon" : type === "dish" ? "Lomo Saltado" : "Carlos Quispe"} required className={inputCls} />
       </div>
       {type === "restaurant" && (
         <div>
